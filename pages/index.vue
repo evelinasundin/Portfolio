@@ -1,30 +1,9 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Evelinas Portfolio
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="bg-black w-full min-h-screen flex items-center justify-center">
+      <p class="text-white">
+        Let's see if Vercel can handle Tailiwnd
+      </p>
     </div>
-  </div>
 </template>
 
 <script>

@@ -1,17 +1,16 @@
 <template>
-  <div class="max-w-reg min-h-screen flex items-center justify-between screen-height mx-auto py-20 relative">
+  <div class="page-load delay-3 max-w-reg min-h-screen flex items-center justify-between screen-height mx-auto py-20 relative">
     <div>
-    <h1 class="font-serif text-2xl leading-tight text-white max-w-reg pb-4 head-title relative">
-      Hi, Welcome
-    </h1>
-    <p class="text-white font-sans text-md max-w-lg inline-block">
-      I am
-      <span class="text-img-text cursor-pointer text-orange"> Evelina ( hover me )<img class="text-img-img pointer-events-none" lazyload src="~/assets/images/evelina.jpg" />
-      </span>
-       a front end developer from Stockholm, currently working
-      <a href="https://ohmy.co" target="blank" class="text-orange">@ohmy.</a>
-      Scroll 👇  to see some selected work I have done.
-    </p>
+      <h1 class="font-serif text-2xl leading-tight text-white max-w-reg pb-10 head-title relative">
+        Hi, Welcome
+      </h1>
+      <p class="text-white font-sans relative leading-loose max-w-md start-text text-start inline-block pl-6">
+        I am Evelina a front end developer from Stockholm. Currently working at the full service beraue <a href="https://ohmy.co" target="blank" class="underline">@ohmy.</a>
+        Scroll down  to see some selected work I have done and to get to know me a little better.
+      </p>
+    </div>
+    <div class="image-overlay">
+      <img class="max-w-sm page-load delay-4 bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
     </div>
   </div>
 </template>
@@ -22,28 +21,6 @@
   margin-top: -88px;
 }
 
-.hej {
-  &:before {
-    content: '';
-    width: 90%;
-    height: 90%;
-    background-color: white;
-    position: absolute;
-    z-index: -1;
-  }
-}
-
-.text-img-img {
-  opacity: 0;
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-  backface-visibility: hidden;
-  top: 50%;
-  right:0;
-  transform: translateY(-50%);
-  height: 500px;
-}
-
 .text-img-text {
   &:hover {
     .text-img-img {
@@ -51,19 +28,40 @@
     }
   }
 }
-// @keyframes slideInFromLeft {
-//   0% {
-//     transform: translateX(-100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translate3d(0px, 0%, 0px);
-//     opacity: 1;
-//   }
-// }
 
-// .hello {
-//   animation: 1s ease-in-out slideInFromLeft;
-// }
+@keyframes slidedown {
+  from {height: 0; opacity: 0;}
+  to {height: 100%; opacity: 1;}
+}
+
+.start-text {
+  &:before {
+    content:'';
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    opacity: 0;
+    animation: slidedown 1s forwards;
+    animation-delay: 3.2s;
+  }
+}
+
+.bface-visibility {
+   backface-visibility: hidden;
+}
+
+.image-overlay {
+  position: relative;
+  &:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
 </style>

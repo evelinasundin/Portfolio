@@ -45,7 +45,7 @@ module.exports = {
         ]
       },
       maxWidth: {
-        reg: '1100px'
+        reg: '980px'
       },
       fontSize: {
         sm: '0.75rem',

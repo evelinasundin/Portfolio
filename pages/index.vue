@@ -1,7 +1,9 @@
 <template>
   <div class="bg-black">
+  <div class="">
   <Nav />
   <Hero />
+  </div>
   <ProjectsHolder />
   </div>
 </template>
@@ -10,6 +12,6 @@
 export default {}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

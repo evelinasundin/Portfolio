@@ -1,6 +1,6 @@
 <template>
   <div class="pb-48">
-    <img lazyload :src="project.image" class="w-9/12 pb-6"/>
+    <img lazyload :src="project.image" class="pb-6"/>
     <div class="pl-6 project-text relative">
       <h3 class="text-lg text-white font-serif pb-2"> {{project.title}} </h3>
       <h2 class="font-sans text-white font-bold uppercase text-sm pb-8"> {{project.subtitle}} </h2>
@@ -28,11 +28,11 @@ export default {
 .project-text {
   &:before {
     content:'';
-    height: 100%;
     width: 1px;
     background-color: white;
     position: absolute;
     left: 0;
+    top: 8px;
   }
 }
 

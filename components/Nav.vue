@@ -1,6 +1,6 @@
 <template>
   <nav class="mx-10 py-8">
-    <div class="flex justify-between pb-4 page-load delay-2">
+    <div class="flex justify-between pb-4 page-load delay-25">
       <a href="#" class="text-white font-serif"> Evelina Sundin </a>
       <div>
         <a href="#" class="text-white font-serif pr-6"> Selected Work </a>
@@ -37,19 +37,20 @@
   opacity: 0;
 }
 
-.delay-1 {
-  animation-delay: 1s;
-}
-
 .delay-2 {
   animation-delay: 2s;
 }
 
-.delay-3 {
-  animation-delay: 3s;
+.delay-25 {
+  animation-delay: 2.5s;
+}
+
+.delay-35 {
+  animation-delay: 3.5s;
 }
 
 .delay-4 {
   animation-delay: 5s;
 }
+
 </style>

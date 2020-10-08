@@ -1,5 +1,5 @@
 <template>
-  <div class="page-load delay-3 max-w-reg min-h-screen flex items-center justify-between screen-height mx-auto py-20 relative">
+  <div class="page-load delay-35 max-w-reg min-h-screen flex items-center justify-between screen-height mx-auto py-20 relative">
     <div>
       <h1 class="font-serif text-2xl leading-tight text-white max-w-reg pb-10 head-title relative">
         Hi, Welcome
@@ -9,8 +9,8 @@
         Scroll down  to see some selected work I have done and to get to know me a little better.
       </p>
     </div>
-    <div class="image-overlay">
-      <img class="max-w-sm page-load delay-4 bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
+    <div class="image-overlay page-load delay-4">
+      <img class="max-w-sm bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
     </div>
   </div>
 </template>
@@ -44,7 +44,7 @@
     top: 8px;
     opacity: 0;
     animation: slidedown 1s forwards;
-    animation-delay: 3.2s;
+    animation-delay: 3.8s;
   }
 }
 
@@ -61,6 +61,9 @@
     position: absolute;
     top: 0;
     left: 0;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
   }
 }
 

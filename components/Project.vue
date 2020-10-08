@@ -1,17 +1,20 @@
 <template>
   <div class="pb-48">
-    <img lazyload :src="project.image" class="pb-6"/>
+    <a :href="project.link">
+      <img lazyload :src="project.image" class="pb-6"/>
+    </a>
     <div class="pl-6 project-text relative">
-      <h3 class="text-lg text-white font-serif pb-2"> {{project.title}} </h3>
-      <h2 class="font-sans text-white font-bold uppercase text-sm pb-8"> {{project.subtitle}} </h2>
-      <p class="text-white font-sans max-w-md pb-4 project-html" v-html="project.text">  </p>
-
-      <div class="flex pt-10 pb-8">
-        <div v-for="item in project.techniques" :key="item" class="mr-3 text-xs font-sans text-white uppercase font-bold">
+      <h3 class="text-lg text-white font-serif pb-4"> {{project.title}} </h3>
+      <p class="text-white font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
+      <p class="font-sans text-white pb-2"> <span class="font-serif underline mr-2">  Client:</span> {{project.client}} </p>
+      <p class="font-sans text-white pb-2"> <span class="font-serif underline mr-2">  Employer:</span> {{project.employer}} </p>
+      <div class="flex pb-8 items-center">
+        <p class="font-serif text-white mr-2 underline"> Techniques used: </p>
+        <div v-for="item in project.techniques" :key="item" class="mr-3 font-sans leading-none text-white">
         {{item}}
         </div>
       </div>
-      <p class="font-serif text-md text-white"> Go to website</p>
+      <a :href="project.link" class="font-serif text-md text-white underline" > Go to website </a>
     </div>
   </div>
 </template>
@@ -25,9 +28,16 @@ export default {
 
 <style lang="scss">
 
+.project-html {
+  a {
+    @apply underline;
+  }
+}
+
 .project-text {
   &:before {
     content:'';
+    height: 100%;
     width: 1px;
     background-color: white;
     position: absolute;

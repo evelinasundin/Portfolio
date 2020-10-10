@@ -6,15 +6,15 @@
     <div class="pl-6 project-text relative">
       <h3 class="text-lg text-white font-serif pb-4"> {{project.title}} </h3>
       <p class="text-white font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <div class="flex pb-8 items-center">
+      <div class="sm:flex pb-8 items-center">
         <p class="font-sans text-white mr-2"> Techniques used: </p>
-        <div v-for="item in project.techniques" :key="item" class="mr-3 font-sans leading-none text-white">
+        <p v-for="item in project.techniques" :key="item" class="mr-3 font-sans inline-block leading-none text-white">
         {{item}}
-        </div>
+        </p>
       </div>
-      <div class="flex justify-between">
-        <a :href="project.link" target="_blank" class="font-sans text-md text-white underline" > Go to website </a>
-        <div class="flex opacity-50">
+      <div class="sm:flex justify-between">
+        <a :href="project.link" target="_blank" class="font-sans text-md text-white underline sm:pb-0 pb-6 block" > Go to website </a>
+        <div class="sm:flex opacity-50">
           <p class="font-sans text-white pb-2 mr-3"> Client: {{project.client}} </p>
           <p class="font-sans text-white pb-2"> Employer: {{project.employer}} </p>
         </div>

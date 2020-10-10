@@ -1,6 +1,6 @@
 <template>
-  <div class="page-load delay-35 max-w-reg min-h-screen flex items-center justify-between screen-height mx-auto py-20 relative">
-    <div>
+  <div class="page-load delay-35 max-w-reg min-h-screen sm:flex items-center justify-between screen-height mx-auto py-20 relative">
+    <div class="sm:pb-0 pb-16">
       <h1 class="font-serif text-2xl leading-tight text-white max-w-reg pb-10 head-title relative">
         Hi, Welcome
       </h1>
@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="image-overlay page-load delay-4">
-      <img class="max-w-sm bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
+      <img class="sm:max-w-sm bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
     </div>
   </div>
 </template>

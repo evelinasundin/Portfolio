@@ -1,10 +1,10 @@
 <template>
   <div class="bg-black">
-  <div class="">
   <Nav />
+  <div class="sm:px-0 px-4">
   <Hero />
-  </div>
   <ProjectsHolder />
+  </div>
   </div>
 </template>
 

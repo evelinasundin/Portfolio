@@ -1,9 +1,9 @@
 <template>
-  <nav class="mx-10 py-8">
+  <nav class="sm:mx-10 mx-4 pt-8 pb-20">
     <div class="flex justify-between pb-4 page-load delay-25">
       <a href="#" class="text-white font-serif"> Evelina Sundin </a>
       <div>
-        <a href="#" class="text-white font-serif pr-6"> Selected Work </a>
+        <a href="#" class="text-white font-serif sm:pr-6 pr-3"> Selected Work </a>
         <a href="#" class="text-white font-serif"> About  </a>
       </div>
     </div>

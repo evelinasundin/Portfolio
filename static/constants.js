@@ -3,7 +3,7 @@ export const WORK =
     {
       id: 1,
       title: 'Pontus Rudolfson',
-      empolyer: 'Personal project',
+      employer: 'Personal project',
       link: 'https://www.rudolfson.com/',
       text: '<p>My friend <a href="https://andreasantonsson.dev/" target="_blank" rel="noopener noreferrer">Andreas</a> and I co-developed this Website for photographer Pontus Rudolfson. <br> The site won <a href="https://www.awwwards.com/sites/pontus-rudolfson" target="_blank">Awwwards</a> Mobile Site of the week and site of the day on <a href="https://www.cssdesignawards.com/sites/pontus-rudolfson/35598/" target="_blank">CSS design awards</a>. <br>  Design by <a href="https://andreasantonsson.dev/" target="_blank" rel="noopener noreferrer">Andreas</a>.<p>',
       techniques: [
@@ -15,9 +15,9 @@ export const WORK =
     {
       id: 2,
       title: 'Highnote',
-      employer: 'Exam work at Nackademin',
+      employer: 'Exam work',
       link: 'http://highnote.herokuapp.com/',
-      text: '<p>My exam work that I did @Nackademin. Sign in with Spotify and see your most listened to artist, songs and create your personal playlist.</p>',
+      text: '<p>My exam work that I did at Nackademin. Sign in with Spotify and see your most listened to artist, songs and create your personal playlist.</p>',
       techniques: [
         'React', 'Spotify API', 'OAuth', 'Heroku', 'SASS', 'etc'
       ],
@@ -52,7 +52,7 @@ export const WORK =
       id: 5,
       title: 'Cupole - Handbook',
       employer: 'Oh My',
-      link: 'https://www.life.cupole.se/',
+      link: 'https://life.cupole.se/',
       text: '<p>Handbook as website made for Management Consultants agancy Cupole</p>',
       techniques: [
         'Javascript', 'PHP', 'Wordpress', 'SASS', 'etc'
@@ -63,7 +63,7 @@ export const WORK =
     {
       id: 6,
       title: 'Cultur',
-      employer: 'Made for @ohmy',
+      employer: 'Oh My',
       link: 'https://www.culturbar.se/',
       text: '<p>Website made for restaurant Cultur in Gamla Stan</p>',
       techniques: [
@@ -99,7 +99,7 @@ export const WORK =
     {
       id: 9,
       title: 'Developers Bookmark',
-      employer: 'Student work at Nackademin',
+      employer: 'Student work',
       link: 'https://build-yvhmdluhgo.now.sh/',
       text: '<p>The main focus of the task was to build an application in React that collects and stores data from an own setup database in Firebase. Demands were to be able to log in through firebase authentication system and store information about users and user data.</p>',
       techniques: [
@@ -111,7 +111,7 @@ export const WORK =
     {
       id: 10,
       title: 'Album Collection',
-      employer: 'Student work at Nackademin',
+      employer: 'Student work',
       link: 'https://evelinasundin.github.io/AlbumCollection/',
       text: '<p>The task was to create an application that collects data from an open API and to show this via HTML DOM. Some of the requirements were, among other things, to collect data from an open API that serves data in form of json, to have good code structure and use of namespaces as well as error handling.</p>',
       techniques: [

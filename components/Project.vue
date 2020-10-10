@@ -6,15 +6,19 @@
     <div class="pl-6 project-text relative">
       <h3 class="text-lg text-white font-serif pb-4"> {{project.title}} </h3>
       <p class="text-white font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <p class="font-sans text-white pb-2"> <span class="font-serif underline mr-2">  Client:</span> {{project.client}} </p>
-      <p class="font-sans text-white pb-2"> <span class="font-serif underline mr-2">  Employer:</span> {{project.employer}} </p>
       <div class="flex pb-8 items-center">
-        <p class="font-serif text-white mr-2 underline"> Techniques used: </p>
+        <p class="font-sans text-white mr-2"> Techniques used: </p>
         <div v-for="item in project.techniques" :key="item" class="mr-3 font-sans leading-none text-white">
         {{item}}
         </div>
       </div>
-      <a :href="project.link" class="font-serif text-md text-white underline" > Go to website </a>
+      <div class="flex justify-between">
+        <a :href="project.link" target="_blank" class="font-sans text-md text-white underline" > Go to website </a>
+        <div class="flex opacity-50">
+          <p class="font-sans text-white pb-2 mr-3"> Client: {{project.client}} </p>
+          <p class="font-sans text-white pb-2"> Employer: {{project.employer}} </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>

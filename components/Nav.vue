@@ -3,8 +3,8 @@
     <div class="flex justify-between pb-4 page-load delay-25">
       <a href="#" class="text-white font-serif"> Evelina Sundin </a>
       <div>
-        <a href="#" class="text-white font-serif sm:pr-6 pr-3"> Selected Work </a>
-        <a href="#" class="text-white font-serif"> About  </a>
+        <a href="#selectedwork" class="text-white font-serif sm:pr-6 pr-3"> Selected Work </a>
+        <a href="#about " class="text-white font-serif"> About  </a>
       </div>
     </div>
     <span class="nav-line"> </span>

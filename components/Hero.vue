@@ -5,7 +5,7 @@
         Hi, Welcome
       </h1>
       <p class="text-white font-sans relative leading-loose max-w-md start-text text-start inline-block pl-6">
-        I am Evelina a front end developer from Stockholm. Currently working at the full service beraue <a href="https://ohmy.co" target="blank" class="underline">@ohmy.</a>
+        I am Evelina a front end developer from Stockholm. Currently working at the full service agency <a href="https://ohmy.co" target="blank" rel="noopener noreferrer" class="underline">@ohmy.</a>
         Scroll down  to see some selected work I have done and to get to know me a little better.
       </p>
     </div>

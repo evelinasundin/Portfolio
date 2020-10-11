@@ -1,12 +1,12 @@
 <template>
   <div class="pb-48">
-    <a :href="project.link">
+    <a :href="project.link" target="_blank" rel="noopener noreferrer">
       <img lazyload :src="project.image" class="pb-6"/>
     </a>
     <div class="pl-6 project-text relative">
       <h3 class="text-lg text-white font-serif pb-4"> {{project.title}} </h3>
       <p class="text-white font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <a :href="project.link" target="_blank" class="font-sans text-md text-white underline pb-6 block" > Go to website </a>
+      <a :href="project.link" target="_blank" rel="noopener noreferrer" class="font-sans text-md text-white underline pb-6 block" > Go to website </a>
       <div class="sm:flex opacity-50 justify-between">
         <div class="sm:flex items-center">
           <p class="font-sans text-white mr-2"> Techniques used: </p>

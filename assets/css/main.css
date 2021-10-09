@@ -15,9 +15,9 @@
   font-weight: 600;
   font-display: swap;
   src:
-  url('~assets/fonts/HKGrotesk-Semibold.ttf') format('truetype'),
-  url('~assets/fonts/HKGrotesk-Semibold.woff') format('woff'),
-  url('~assets/fonts/HKGrotesk-Semibold.woff2') format('woff2'),
+  url('~assets/fonts/HKGrotesk-SemiBold.ttf') format('truetype'),
+  url('~assets/fonts/HKGrotesk-SemiBold.woff') format('woff'),
+  url('~assets/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
 }
 
 @font-face {

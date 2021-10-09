@@ -50,7 +50,7 @@ module.exports = {
       fontSize: {
         sm: '0.75rem',
         base: '1rem',
-        md: '1.125rem',
+        md: '1.25rem',
         lg: '1.75rem',
         xl: '2rem',
         '2xl': '2.25rem', // Probably only for large icons etc

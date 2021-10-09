@@ -36,6 +36,7 @@
     font-size: 30px;
     font-family: sans-serif;
     z-index: 99;
+    transition: all .2s ease-in-out;
   }
 
   .spinner {

@@ -1,11 +1,10 @@
 <template>
-  <div class="bg-black">
-  <Nav />
-  <div class="sm:px-0 px-4">
-  <Hero />
+  <div>
+    <div class="bg-gray-lightest">
+    <Nav />
+    <Hero />
+    </div>
   <ProjectsHolder />
-  <About />
-  </div>
   </div>
 </template>
 
@@ -19,6 +18,10 @@ export default {
             behavior: 'smooth'
         });
        });
+    });
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000)
     });
   }
 }

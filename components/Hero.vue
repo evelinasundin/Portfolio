@@ -1,32 +1,23 @@
 <template>
-  <div class="page-load delay-35 max-w-reg min-h-screen sm:flex items-center justify-between screen-height mx-auto py-20 relative">
-    <div class="sm:pb-0 pb-16">
-      <h1 class="font-serif text-2xl leading-tight text-white max-w-reg pb-10 head-title relative">
-        Hi, Welcome
-      </h1>
-      <p class="text-white font-sans relative leading-loose max-w-md start-text text-start inline-block pl-6">
-        I am Evelina a front end developer from Stockholm. Currently working at the full service agency <a href="https://ohmy.co" target="blank" rel="noopener noreferrer" class="underline">@ohmy.</a>
-        Scroll down  to see some selected work I have done and to get to know me a little better.
-      </p>
-    </div>
-    <div class="image-overlay page-load delay-4">
-      <img class="sm:max-w-sm bface-visibility" lazyload src="~/assets/images/evelina.jpg" />
+  <div class="relative">
+    <div class="bg-gray-lightest page-load delay-35 max-w-reg px-4 mx-auto py-20">
+      <div class="sm:pb-0 pb-16">
+        <h1 class="font-serif text-4xl leading-tight text-black max-w-reg pb-10 head-title relative">
+          Hi, I'm <br>
+          Evelina Sundin <br>
+          I build things for the web.
+        </h1>
+      </div>
+      <div class="hero-circle circle"> </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 
-.screen-height {
-  margin-top: -88px;
-}
-
-.text-img-text {
-  &:hover {
-    .text-img-img {
-      opacity: 1;
-    }
-  }
+.circle {
+  @apply h-40 w-40 rounded-full border-purple border absolute;
+  left: -44px;
 }
 
 @keyframes slidedown {

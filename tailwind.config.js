@@ -9,13 +9,17 @@ module.exports = {
         black: '#141414',
         white: '#fff',
         orange: '#ffa500',
+        purple: {
+          light: '#ECECFF',
+          default: '#B4B4E5'
+        },
         gray: {
           lightest: '#F5F5F5',
           light: '#D7D7D7',
           medium: '#B6B6B6',
           default: '#B6B6B6',
           dark: '#7F7F7F',
-          darkest: '#414141'
+          darkest: '#494949'
         }
       },
       fontFamily: {
@@ -45,7 +49,7 @@ module.exports = {
         ]
       },
       maxWidth: {
-        reg: '980px'
+        reg: '73rem'
       },
       fontSize: {
         sm: '0.75rem',

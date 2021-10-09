@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+  url('~assets/fonts/HKGrotesk-Bold.ttf') format('truetype'),
+  url('~assets/fonts/HKGrotesk-Bold.woff') format('woff'),
+  url('~assets/fonts/HKGrotesk-Bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+  url('~assets/fonts/HKGrotesk-Semibold.ttf') format('truetype'),
+  url('~assets/fonts/HKGrotesk-Semibold.woff') format('woff'),
+  url('~assets/fonts/HKGrotesk-Semibold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+  url('~assets/fonts/HKGrotesk-Medium.ttf') format('truetype'),
+  url('~assets/fonts/HKGrotesk-Medium.woff') format('woff'),
+  url('~assets/fonts/HKGrotesk-Medium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+  url('~assets/fonts/HKGrotesk-Regular.ttf') format('truetype'),
+  url('~assets/fonts/HKGrotesk-Regular.woff') format('woff'),
+  url('~assets/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+}

@@ -20,16 +20,46 @@
           </span>
         </h1>
       </div>
-      <div class="hero-circle circle"> </div>
+      <div class="hero-circle">
+        <svg height="200" width="200">
+          <circle class="circle" cx="100" cy="100" r="95" stroke="#B4B4E5" stroke-width="1" fill-opacity="0" />
+        </svg>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 
+// .circle {
+//   @apply h-40 w-40 rounded-full border-purple border absolute;
+//   left: -44px;
+// }
+
+.hero-circle {
+  @apply h-40 w-40 absolute;
+  left: -34px;
+  bottom: -50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .circle {
-  @apply h-40 w-40 rounded-full border-purple border absolute;
-  left: -44px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 2s ease-in forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes slidedown {
@@ -84,10 +114,6 @@
       margin: 0;
       line-height: 117%;
      }
-}
-
-.animate-text {
-
 }
 
 @for $i from 1 through 3 {

@@ -32,7 +32,7 @@ export const WORK =
       title: 'Nellie Roos - Portfolio',
       employer: 'Nellie Roos',
       link: 'https://makeupbynellieroos.squarespace.com/',
-      text: '<p>Website for make up artist Nellie Roos. Built with Squarespace</p>',
+      text: '<p>Website for make up artist Nellie Roos. Buildt with Squarespace</p>',
       techniques: [
         'Squarespace', 'UI', 'CSS'
       ],

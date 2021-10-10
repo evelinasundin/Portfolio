@@ -1,5 +1,5 @@
 <template>
- <section class="max-w-small sm:flex justify-center items-center mx-auto sm:py-36 py-24" id="about">
+ <section class="max-w-small sm:flex justify-center items-center mx-auto sm:py-40 py-24" id="about">
   <div class="w-1/3 relative">
     <img class="w-full p-6" lazyload src="~/assets/images/evelina-vector.png" />
     <svg class="image-vector" viewBox="0 0 308 347" fill="none" xmlns="http://www.w3.org/2000/svg">

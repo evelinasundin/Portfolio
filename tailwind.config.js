@@ -49,7 +49,7 @@ module.exports = {
         ]
       },
       maxWidth: {
-        reg: '73rem',
+        reg: '75rem',
         small: '65rem'
       },
       fontSize: {

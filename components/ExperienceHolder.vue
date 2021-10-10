@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-lightest py-20" id="experience">
+  <section class="bg-gray-lightest py-40" id="experience">
     <div class="max-w-reg mx-auto">
       <h2 class="text-lg font-serif text-black pb-10"> Experience </h2>
       <div class="flex">

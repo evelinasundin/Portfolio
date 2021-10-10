@@ -120,4 +120,89 @@ export const WORK =
       client: 'Personal project',
       image: require("@/assets/images/ac.jpg?webp")
     },
-]
+];
+
+export const KNOWLEDGE = [
+  {
+    id: 1,
+    title: 'Skills',
+    set: ['Responsive Design', 'Design thinking', 'Cross Browser Testing', 'SEO', 'Web Perfomance Optimization', 'Design systems', 'Wireframing', 'Prototyping', 'Version Control', 'Agile development', 'UX-Writing (novice)']
+  },
+  {
+    id: 2,
+    title: 'Tech',
+    set: ['Wordpress', 'PHP', 'Javascript - ES6', 'Vue', 'Nuxt', 'CSS', 'SCSS', 'Tailwind', 'React (novice)']
+  },
+  {
+    id: 3,
+    title: 'Tools',
+    set: ['Figma','Sketch', 'Miro', 'VS Code', 'Terminal', 'Google Analytics', 'Photoshop (novice)', 'Illustrator(novice)']
+  },
+];
+
+
+export const EXPERIENCES = [
+  {
+    id: 1,
+    cat: 'Work',
+    year: '2013 - 2014',
+    title: 'Telia - First Line Technical Support',
+    desc: false,
+  },
+  {
+    id: 2,
+    cat: 'Education',
+    year: '2014',
+    title: 'Berghs School of Communication - Graphic design course',
+    desc: false,
+  },
+  {
+    id: 3,
+    cat: 'Education',
+    year: '2015',
+    title: 'Blekinge Tekniska Högskola - PHP CSS HTMl course',
+    desc: false,
+  },
+  {
+    id: 4,
+    cat: 'Education',
+    year: '2015',
+    title: 'Södetörn Högskola - Typography course',
+    desc: false,
+  },
+  {
+    id: 5,
+    cat: 'Education',
+    year: '2015-2016',
+    title: 'Stockholms Universitet - Digital Media 60hp',
+    desc: false,
+  },
+  {
+    id: 7,
+    cat: 'Education',
+    year: '2016-2018',
+    title: 'Nackademin Vocational Eduction - Frontend Development',
+    desc: false,
+  },
+  {
+    id: 8,
+    cat: 'Work',
+    year: 'Oct 2017 - Dec 2017',
+    title: 'The Generation - Frontend internship',
+    desc: false,
+  },
+  {
+    id: 9,
+    cat: 'Education',
+    year: 'Dec 2020 - May 2021',
+    title: 'Brobygrafiska - UX / UI course',
+    desc: false,
+  },
+  {
+    id: 10,
+    cat: 'Work',
+    year: 'March 2018 - Present',
+    title: 'Oh My - Developer, UX / UI designer, Project management',
+    desc: false,
+  },
+];

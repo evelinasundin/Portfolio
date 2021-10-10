@@ -2,9 +2,9 @@
   <nav class="sm:mx-10 mx-4 pt-8 pb-20 bg-gray-lightest">
     <div class="flex justify-between pb-4 page-load delay-25">
       <a href="#" class="text-black font-md font-bold font-sans"> Evelina Sundin </a>
-      <div>
+      <div class="nav-links">
         <a href="#about" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> About </a>
-        <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Knowledge </a>
+        <a href="#knowledge" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Knowledge </a>
         <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Experience </a>
         <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Personal Projects </a>
         <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans"> Contact </a>
@@ -18,15 +18,6 @@
 @keyframes slidein {
   from {width: 0; opacity: 0;}
   to {width: 100%; opacity: 1;}
-}
-
-.nav-line {
-  height: 1px;
-  display: block;
-  animation: slidein 1s ease forwards;
-  animation-delay: 1s;
-  background: white;
-  opacity: 0;
 }
 
 @keyframes fadein {
@@ -53,6 +44,15 @@
 
 .delay-4 {
   animation-delay: 5s;
+}
+
+.nav-links {
+  a {
+    transition: opacity .2s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 </style>

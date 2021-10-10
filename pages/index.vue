@@ -4,7 +4,11 @@
     <Nav />
     <Hero />
     </div>
-  <ProjectsHolder />
+    <About />
+    <KnowledgeHolder />
+    <ExperienceHolder />
+    <ProjectsHolder />
+    <Footer />
   </div>
 </template>
 
@@ -19,10 +23,10 @@ export default {
         });
        });
     });
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 2000)
-    });
+    // this.$nextTick(() => {
+    //   this.$nuxt.$loading.start()
+    //   setTimeout(() => this.$nuxt.$loading.finish(), 2000)
+    // });
   }
 }
 </script>

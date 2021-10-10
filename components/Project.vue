@@ -4,19 +4,19 @@
       <img lazyload :src="project.image" class="pb-6"/>
     </a>
     <div class="pl-6 project-text relative">
-      <h3 class="text-lg text-white font-serif pb-4"> {{project.title}} </h3>
-      <p class="text-white font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <a :href="project.link" target="_blank" rel="noopener noreferrer" class="font-sans text-md text-white underline pb-6 block" > Go to website </a>
+      <h3 class="text-lg text-black font-serif pb-4"> {{project.title}} </h3>
+      <p class="text-black font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
+      <a :href="project.link" target="_blank" rel="noopener noreferrer" class="font-sans text-md text-black underline pb-6 block" > Go to website </a>
       <div class="sm:flex opacity-50 justify-between">
         <div class="sm:flex items-center">
-          <p class="font-sans text-white mr-2"> Techniques used: </p>
-          <p v-for="item in project.techniques" :key="item" class="mr-3 font-sans inline-block leading-none text-white">
+          <p class="font-sans text-black mr-2"> Techniques used: </p>
+          <p v-for="item in project.techniques" :key="item" class="mr-3 font-sans inline-block leading-none text-black">
           {{item}}
           </p>
         </div>
         <div class="sm:flex">
-          <p class="font-sans text-white pb-2 mr-3"> Client: {{project.client}} </p>
-          <p class="font-sans text-white pb-2"> Employer: {{project.employer}} </p>
+          <p class="font-sans text-black pb-2 mr-3"> Client: {{project.client}} </p>
+          <p class="font-sans text-black pb-2"> Employer: {{project.employer}} </p>
         </div>
       </div>
     </div>

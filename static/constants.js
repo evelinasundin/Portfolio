@@ -2,10 +2,11 @@ export const WORK =
   [
     {
       id: 1,
-      title: 'Pontus Rudolfson',
+      code: true,
+      title: 'Pontus Rudolfson - Portfolio',
       employer: 'Personal project',
       link: 'https://www.rudolfson.com/',
-      text: '<p>My friend <a href="https://andreasantonsson.dev/" target="_blank" rel="noopener noreferrer">Andreas</a> and I co-developed this Website for photographer Pontus Rudolfson. <br> The site won <a href="https://www.awwwards.com/sites/pontus-rudolfson" target="_blank">Awwwards</a> Mobile Site of the week and site of the day on <a href="https://www.cssdesignawards.com/sites/pontus-rudolfson/35598/" target="_blank">CSS design awards</a>. <br>  Design by <a href="https://andreasantonsson.dev/" target="_blank" rel="noopener noreferrer">Andreas</a>.<p>',
+      text: '<p>My friend Andreas and I co-developed this Website for photographer Pontus Rudolfson. The site won <a href="https://www.awwwards.com/sites/pontus-rudolfson" target="_blank">Awwwards</a> Mobile Site of the week and site of the day on <a href="https://www.cssdesignawards.com/sites/pontus-rudolfson/35598/" target="_blank">CSS design awards</a>. Design by <a href="https://andreasantonsson.dev/" target="_blank" rel="noopener noreferrer">Andreas</a>.<p>',
       techniques: [
         'Vue', 'Nuxt', 'GSAP', 'SASS', 'etc'
       ],
@@ -14,40 +15,66 @@ export const WORK =
     },
     {
       id: 2,
-      title: 'Highnote',
+      code: false,
+      title: 'Bolia Redesign',
+      employer: 'Personal project',
+      link: 'https://www.figma.com/file/FVqrnYODNWkuKqugAL1QW3/Bolia-Hi-Fi-Wireframe?node-id=0%3A1',
+      text: '<p>Exam project that i did at Brobygrafiska. Focus area of the project was to improve the UX and UI of the E-commerce website Bolia.com. <br> <span class="font-medium block pt-4"> Find out more about the project: </span> <a href="https://www.figma.com/file/FVqrnYODNWkuKqugAL1QW3/Bolia-Hi-Fi-Wireframe?node-id=133%3A10"> Case Study </a> - <a href="https://www.figma.com/file/FVqrnYODNWkuKqugAL1QW3/Bolia-Hi-Fi-Wireframe?node-id=0%3A1"> Figma link </a> - <a href="https://www.figma.com/file/FVHnYIBfVI2swClkAFiLmj/Bolia?node-id=0%3A1"> Work Progress </a><p>',
+      techniques: [
+        'Scenarios', 'User Flows', 'Personas', 'Wireframing', 'Prototyping', 'etc'
+      ],
+      client: 'Personal',
+      image: require("@/assets/images/bolia.jpg?webp"),
+    },
+    {
+      id: 3,
+      code: false,
+      title: 'Nellie Roos - Portfolio',
+      employer: 'Nellie Roos',
+      link: 'https://makeupbynellieroos.squarespace.com/',
+      text: '<p>Website for make up artist Nellie Roos. Built with Squarespace</p>',
+      techniques: [
+        'Squarespace', 'UI', 'CSS'
+      ],
+      client: 'Personal project',
+      image: require("@/assets/images/nellie-roos.jpg?webp")
+    },
+    {
+      id: 4,
+      title: 'Highnote - Spotify Application',
       employer: 'Exam work',
       link: 'http://highnote.herokuapp.com/',
-      text: '<p>My exam work that I did at Nackademin. Sign in with Spotify and see your most listened to artist, songs and create your personal playlist.</p>',
+      text: '<p>My exam work that I did at Nackademin in 2018. Sign in with Spotify and see your most listened to artist, songs and create your personal playlist.</p>',
       techniques: [
         'React', 'Spotify API', 'OAuth', 'Heroku', 'SASS', 'etc'
       ],
       client: 'Personal project',
       image: require("@/assets/images/highnote.jpg?webp")
     },
-    {
-      id: 9,
-      title: 'Developers Bookmark',
-      employer: 'Student work',
-      link: 'https://build-yvhmdluhgo.now.sh/',
-      text: '<p>The main focus of the task was to build an application in React that collects and stores data from an own setup database in Firebase. Demands were to be able to log in through firebase authentication system and store information about users and user data.</p>',
-      techniques: [
-        'React', 'Firebase', 'Javascript', 'Bootstrap', 'SASS', 'etc'
-      ],
-      client: 'Personal project',
-      image: require("@/assets/images/dev-bookmark.jpg?webp")
-    },
-    {
-      id: 10,
-      title: 'Album Collection',
-      employer: 'Student work',
-      link: 'https://evelinasundin.github.io/AlbumCollection/',
-      text: '<p>The task was to create an application that collects data from an open API and to show this via HTML DOM. Some of the requirements were, among other things, to collect data from an open API that serves data in form of json, to have good code structure and use of namespaces as well as error handling.</p>',
-      techniques: [
-        'Module Pattern', 'Ajax', 'Javascript', 'Bootstrap', 'SASS', 'etc'
-      ],
-      client: 'Personal project',
-      image: require("@/assets/images/ac.jpg?webp")
-    },
+    // {
+    //   id: 9,
+    //   title: 'Developers Bookmark',
+    //   employer: 'Student work',
+    //   link: 'https://build-yvhmdluhgo.now.sh/',
+    //   text: '<p>The main focus of the task was to build an application in React that collects and stores data from an own setup database in Firebase. Demands were to be able to log in through firebase authentication system and store information about users and user data.</p>',
+    //   techniques: [
+    //     'React', 'Firebase', 'Javascript', 'Bootstrap', 'SASS', 'etc'
+    //   ],
+    //   client: 'Personal project',
+    //   image: require("@/assets/images/dev-bookmark.jpg?webp")
+    // },
+    // {
+    //   id: 10,
+    //   title: 'Album Collection',
+    //   employer: 'Student work',
+    //   link: 'https://evelinasundin.github.io/AlbumCollection/',
+    //   text: '<p>The task was to create an application that collects data from an open API and to show this via HTML DOM. Some of the requirements were, among other things, to collect data from an open API that serves data in form of json, to have good code structure and use of namespaces as well as error handling.</p>',
+    //   techniques: [
+    //     'Module Pattern', 'Ajax', 'Javascript', 'Bootstrap', 'SASS', 'etc'
+    //   ],
+    //   client: 'Personal project',
+    //   image: require("@/assets/images/ac.jpg?webp")
+    // },
 ];
 
 export const KNOWLEDGE = [

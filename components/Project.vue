@@ -1,23 +1,18 @@
 <template>
-  <div class="pb-48">
-    <a :href="project.link" target="_blank" rel="noopener noreferrer">
-      <img lazyload :src="project.image" class="pb-6"/>
+  <div class="pb-24 sm:flex">
+    <a :href="project.link" class="w-1/2" target="_blank" rel="noopener noreferrer">
+      <img class="shadow-lg" lazyload :src="project.image" />
     </a>
-    <div class="pl-6 project-text relative">
-      <h3 class="text-lg text-black font-serif pb-4"> {{project.title}} </h3>
+    <div class="pl-8 p-6 project-text flex flex-col relative w-1/2">
+      <a :href="project.link" target="_blank" rel="noopener noreferrer">
+        <h3 class="text-md font-bold text-black font-sans pb-4"> {{project.title}} </h3>
+      </a>
       <p class="text-black font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <a :href="project.link" target="_blank" rel="noopener noreferrer" class="font-sans text-md text-black underline pb-6 block" > Go to website </a>
-      <div class="sm:flex opacity-50 justify-between">
-        <div class="sm:flex items-center">
-          <p class="font-sans text-black mr-2"> Techniques used: </p>
-          <p v-for="item in project.techniques" :key="item" class="mr-3 font-sans inline-block leading-none text-black">
+      <div class="mt-auto">
+        <p class="font-sans font-medium pb-3 text-black mr-2"> Techniques used: </p>
+        <p v-for="item in project.techniques" :key="item" class="mr-3 text-xs bg-purple-light py-2 px-3 rounded-full font-sans inline-block leading-none text-black">
           {{item}}
-          </p>
-        </div>
-        <div class="sm:flex">
-          <p class="font-sans text-black pb-2 mr-3"> Client: {{project.client}} </p>
-          <p class="font-sans text-black pb-2"> Employer: {{project.employer}} </p>
-        </div>
+        </p>
       </div>
     </div>
   </div>

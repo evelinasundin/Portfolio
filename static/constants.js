@@ -130,7 +130,7 @@ export const KNOWLEDGE = [
   },
   {
     id: 2,
-    title: 'Tech',
+    title: 'Technologies',
     set: ['Wordpress', 'PHP', 'Javascript - ES6', 'Vue', 'Nuxt', 'CSS', 'SCSS', 'Tailwind', 'React (novice)']
   },
   {
@@ -140,69 +140,71 @@ export const KNOWLEDGE = [
   },
 ];
 
-
-export const EXPERIENCES = [
+export const JOBS = [
   {
     id: 1,
-    cat: 'Work',
     year: '2013 - 2014',
     title: 'Telia - First Line Technical Support',
     desc: false,
   },
   {
     id: 2,
-    cat: 'Education',
-    year: '2014',
-    title: 'Berghs School of Communication - Graphic design course',
-    desc: false,
-  },
-  {
-    id: 3,
-    cat: 'Education',
-    year: '2015',
-    title: 'Blekinge Tekniska Högskola - PHP CSS HTMl course',
-    desc: false,
-  },
-  {
-    id: 4,
-    cat: 'Education',
-    year: '2015',
-    title: 'Södetörn Högskola - Typography course',
-    desc: false,
-  },
-  {
-    id: 5,
-    cat: 'Education',
-    year: '2015-2016',
-    title: 'Stockholms Universitet - Digital Media 60hp',
-    desc: false,
-  },
-  {
-    id: 7,
-    cat: 'Education',
-    year: '2016-2018',
-    title: 'Nackademin Vocational Eduction - Frontend Development',
-    desc: false,
-  },
-  {
-    id: 8,
-    cat: 'Work',
     year: 'Oct 2017 - Dec 2017',
     title: 'The Generation - Frontend internship',
     desc: false,
   },
   {
-    id: 9,
-    cat: 'Education',
-    year: 'Dec 2020 - May 2021',
-    title: 'Brobygrafiska - UX / UI course',
+    id: 3,
+    year: 'March 2018 - Present',
+    title: 'Oh My - Developer, UX / UI designer, Project management',
+    desc: 'I started my journey at Oh my as a frontend intern. While being at Oh My I have worked with a diverse array of clients and projects. My role has evolved during my time at Oh My, from being solely a developer I have gained abilities within project management and customer relationships. Last year I took a course in UX and UI design and since then I’ve also taken parts in projects as a UX and UI designer.',
+  },
+]
+
+export const COURSES = [
+  {
+    id: 1,
+    course: true,
+    year: '2014',
+    title: 'Berghs School of Communication - Graphic design course',
     desc: false,
   },
   {
-    id: 10,
-    cat: 'Work',
-    year: 'March 2018 - Present',
-    title: 'Oh My - Developer, UX / UI designer, Project management',
+    id: 2,
+    course: true,
+    year: '2015',
+    title: 'Blekinge Tekniska Högskola - PHP CSS HTML course',
     desc: false,
   },
-];
+  {
+    id: 3,
+    course: true,
+    year: '2015',
+    title: 'Södetörn Högskola - Typography course',
+    desc: false,
+  },
+]
+
+export const EDUCATIONS = [
+  {
+    id: 1,
+    course: false,
+    year: '2015 - 2016',
+    title: 'Stockholms Universitet - Digital Media 60hp',
+    desc: false,
+  },
+  {
+    id: 2,
+    course: false,
+    year: '2016 - 2018',
+    title: 'Nackademin Vocational Eduction - Frontend Development',
+    desc: false,
+  },
+  {
+    id: 3,
+    course: false,
+    year: 'Dec 2020 - May 2021',
+    title: 'Brobygrafiska Further Education - UX / UI design',
+    desc: false,
+  },
+]

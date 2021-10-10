@@ -52,7 +52,7 @@
   height: 100%;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid #B4B4E5;
   opacity: 0.6;
   position: absolute;
   top: 0;

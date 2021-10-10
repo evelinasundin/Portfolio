@@ -1,6 +1,6 @@
 <template>
   <nav class="sm:mx-10 mx-4 pt-8 pb-20 bg-gray-lightest">
-    <div class="flex justify-between pb-4 page-load delay-25">
+    <div class="flex justify-between pb-4">
       <a href="#" class="text-black font-md font-bold font-sans"> Evelina Sundin </a>
       <div class="nav-links">
         <a href="#about" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> About </a>
@@ -15,20 +15,20 @@
 
 <style lang="scss">
 
-@keyframes slidein {
-  from {width: 0; opacity: 0;}
-  to {width: 100%; opacity: 1;}
-}
+// @keyframes slidein {
+//   from {width: 0; opacity: 0;}
+//   to {width: 100%; opacity: 1;}
+// }
 
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+// @keyframes fadein {
+//   from {opacity: 0;}
+//   to {opacity: 1;}
+// }
 
-.page-load {
-  animation: fadein 1s forwards;
-  opacity: 0;
-}
+// .page-load {
+//   animation: fadein 1s forwards;
+//   opacity: 0;
+// }
 
 .delay-2 {
   animation-delay: 2s;

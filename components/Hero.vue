@@ -86,12 +86,16 @@
      }
 }
 
-@for $i from 2 through 3 {
+.animate-text {
+
+}
+
+@for $i from 1 through 3 {
   .animate-text-wrapper {
     .animate-text-holder {
       &:nth-child(#{$i}) {
         .animate-text {
-        animation-delay: $i * 0.025s;
+        animation-delay: 2 + $i * 0.09s; //2s default loading
         }
       }
 
@@ -100,7 +104,7 @@
 }
 
 .slide-up {
-  animation: slideup 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: slideup 1s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 @keyframes slideup {

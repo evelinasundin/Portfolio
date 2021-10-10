@@ -41,3 +41,8 @@
   url('~assets/fonts/HKGrotesk-Regular.woff') format('woff'),
   url('~assets/fonts/HKGrotesk-Regular.woff2') format('woff2'),
 }
+
+
+html {
+  scroll-behavior: smooth;
+}

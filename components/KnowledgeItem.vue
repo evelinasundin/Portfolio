@@ -25,16 +25,4 @@ export default {
   }
 }
 
-.project-text {
-  &:before {
-    content:'';
-    height: 96%;
-    width: 1px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 8px;
-  }
-}
-
 </style>

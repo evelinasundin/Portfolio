@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
-    <div class="bg-gray-lightest delay-35 max-w-reg px-4 mx-auto py-20">
-      <div class="sm:pb-0 pb-16">
+    <div class="bg-gray-lightest delay-35 max-w-reg px-4 mx-auto pb-20 py-48">
+      <div class="sm:pb-0 pb-16 sm:py-12">
         <h1 class="font-serif animate-text-wrapper text-4xl leading-tight text-black max-w-reg head-title relative">
           <span class="animate-text-holder block">
             <span class="animate-text slide-up block">
@@ -37,10 +37,10 @@
 // }
 
 .hero-circle {
-  @apply h-40 w-40 absolute;
-  left: -34px;
-  bottom: -50%;
-  transform: translateY(-50%) rotate(180deg);
+  @apply absolute;
+  left: -80px;
+  bottom: -100px;
+  transform: rotate(180deg);
 }
 
 .circle {

@@ -6,14 +6,14 @@
         <div class="w-1/2">
           <h2 class="text-md font-sans font-bold text-black pb-4"> Work </h2>
           <span class="block border-t border-black mb-12 mr-12"> </span>
-          <ExperienceItem v-for="job in jobs" :key="job.id" :experience="job" />
+          <ExperienceItem v-for="job in jobs" :key="job.title" :experience="job" />
         </div>
         <div class="w-1/2">
           <h2 class="text-md font-sans font-bold text-black pb-4"> Education </h2>
           <span class="block border-t border-black mb-12 mr-12"> </span>
-          <ExperienceItem v-for="education in educations" :key="education.id" :experience="education" />
+          <ExperienceItem v-for="education in educations" :key="education.title" :experience="education" />
           <h2 class="text-md font-sans font-bold text-black pb-4 mt-24"> Courses </h2>
-          <ExperienceItem v-for="course in courses" :key="course.id" :experience="course" />
+          <ExperienceItem v-for="course in courses" :key="course.title" :experience="course" />
         </div>
       </div>
     </div>

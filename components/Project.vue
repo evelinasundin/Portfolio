@@ -1,7 +1,7 @@
 <template>
-  <div class="pb-24 sm:flex">
+  <div class="mb-24 rounded-lg sm:flex">
     <a :href="project.link" class="w-1/2" target="_blank" rel="noopener noreferrer">
-      <img class="shadow-lg" lazyload :src="project.image" />
+      <img class="shadow-lg rounded-lg" lazyload :src="project.image" />
     </a>
     <div class="pl-8 p-6 project-text flex flex-col relative w-1/2">
       <a :href="project.link" target="_blank" rel="noopener noreferrer">
@@ -33,16 +33,9 @@ export default {
   }
 }
 
-.project-text {
-  &:before {
-    content:'';
-    height: 96%;
-    width: 1px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 8px;
-  }
+.bg-gradient {
+background: rgb(197,197,252);
+background: linear-gradient(94deg, rgba(197,197,252,1) 0%, rgba(236,236,255,1) 100%);
 }
 
 </style>

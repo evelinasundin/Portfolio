@@ -13,6 +13,11 @@
 </template>
 
 <script>
+import smoothscroll from 'smoothscroll-polyfill';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
+
 export default {
   mounted() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

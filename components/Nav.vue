@@ -1,13 +1,17 @@
 <template>
-  <nav class="px-10 py-6 bg-gray-lightest navbar fixed top-0 left-0 w-full z-50" :class="{ 'hidden-navbar': !showNavbar }">
-    <div class="flex justify-between">
+  <nav class="sm:px-10 px-6 py-6 bg-gray-lightest navbar fixed top-0 left-0 w-full z-50" :class="{ 'hidden-navbar': !showNavbar }">
+    <div class="flex justify-between items-center">
       <a href="#" class="text-black font-md font-bold font-sans"> Evelina Sundin </a>
       <div class="nav-links">
         <a href="#about" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> About </a>
+        <a href="#experience" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Experience </a>
         <a href="#knowledge" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Knowledge </a>
-        <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Experience </a>
-        <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Personal Projects </a>
-        <a href="#selectedwork" class="text-gray-darkest font-semibold font-sans"> Contact </a>
+        <a href="#personalprojects" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Personal Projects </a>
+        <a href="#contact" class="text-gray-darkest font-semibold font-sans"> Contact </a>
+      </div>
+      <div @click="toggle" class="hamburger md:hidden block w-6 h-3">
+        <span class="hamburger-top" :class="open ? 'open': ''"></span>
+        <span class="hamburger-bottom" :class="open ? 'open': ''"></span>
       </div>
     </div>
   </nav>
@@ -22,6 +26,7 @@ export default {
       lastScrollPosition: 0,
       scrollValue: 0,
       offset: 60,
+      open: false
     }
   },
   mounted () {
@@ -45,6 +50,9 @@ export default {
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
+    },
+    toggle() {
+    	this.open = !this.open
     }
   }
 }
@@ -92,6 +100,33 @@ export default {
   right: -1000px;
   @screen md {
     @apply relative p-0 flex-row h-auto right-0;
+  }
+}
+
+.hamburger {
+  @apply relative;
+  span {
+    @apply w-full absolute bg-black;
+    height: 1px;
+    left:0;
+    transition: all .2s ease-in-out;
+
+    &.hamburger-top {
+      top: 0;
+      &.open {
+      top: 6px;
+      transform: rotate(45deg);
+      }
+    }
+
+    &.hamburger-bottom {
+      bottom:0;
+      &.open {
+        top: 6px;
+        bottom: auto;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 

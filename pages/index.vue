@@ -5,9 +5,9 @@
     <Hero />
     </div>
     <About />
-    <KnowledgeHolder />
     <ExperienceHolder />
     <ProjectsHolder />
+    <CtaWork />
     <Footer />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-24 rounded-lg sm:flex">
+  <div class="mb-24 rounded-lg sm:flex items-center">
     <a :href="project.link" class="w-1/2" target="_blank" rel="noopener noreferrer">
       <img class="shadow-lg rounded-lg" lazyload :src="project.image" />
     </a>
@@ -7,9 +7,8 @@
       <a :href="project.link" target="_blank" rel="noopener noreferrer">
         <h3 class="text-md font-bold text-black font-sans pb-4"> {{project.title}} </h3>
       </a>
-      <p class="text-black font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
-      <div class="mt-auto">
-        <p class="font-sans font-medium pb-3 text-black mr-2"> Techniques used: </p>
+      <p class="text-gray-darkest font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
+      <div>
         <p v-for="item in project.techniques" :key="item" class="mr-3 text-xs bg-purple-light py-2 px-3 rounded-full font-sans inline-block leading-none text-black">
           {{item}}
         </p>

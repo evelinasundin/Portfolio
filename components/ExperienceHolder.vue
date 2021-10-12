@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+    <KnowledgeHolder />
   </section>
 </template>
 

@@ -52,21 +52,6 @@ export default {
 
 <style lang="scss">
 
-// @keyframes slidein {
-//   from {width: 0; opacity: 0;}
-//   to {width: 100%; opacity: 1;}
-// }
-
-// @keyframes fadein {
-//   from {opacity: 0;}
-//   to {opacity: 1;}
-// }
-
-// .page-load {
-//   animation: fadein 1s forwards;
-//   opacity: 0;
-// }
-
 .delay-2 {
   animation-delay: 2s;
 }
@@ -100,6 +85,14 @@ export default {
 .navbar.hidden-navbar {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
+}
+
+.nav-links {
+  @apply fixed top-0 p-10 flex flex-col bg-gray-lightest h-screen z-50;
+  right: -1000px;
+  @screen md {
+    @apply relative p-0 flex-row h-auto right-0;
+  }
 }
 
 </style>

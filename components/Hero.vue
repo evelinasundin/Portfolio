@@ -1,8 +1,8 @@
 <template>
-  <div class="relative">
+  <div class="bg-gray-lightest relative">
     <div class="bg-gray-lightest delay-35 max-w-reg px-4 mx-auto pb-20 py-48">
-      <div class="sm:pb-0 pb-16 sm:py-12">
-        <h1 class="font-serif animate-text-wrapper text-4xl leading-tight text-black max-w-reg head-title relative">
+      <div class="sm:pb-0 sm:pb-16 sm:py-12">
+        <h1 class="font-serif animate-text-wrapper text-xl sm:text-2xl md:text-4xl leading-tight text-black max-w-reg head-title relative">
           <span class="animate-text-holder block">
             <span class="animate-text slide-up block">
               Hi, I'm
@@ -39,8 +39,13 @@
 .hero-circle {
   @apply absolute;
   left: -80px;
-  bottom: -100px;
+  bottom: auto;
+  top: -80px;
   transform: rotate(180deg);
+
+  @screen md {
+    bottom: -100px;
+  }
 }
 
 .circle {

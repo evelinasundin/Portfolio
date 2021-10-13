@@ -1,8 +1,8 @@
 <template>
-  <nav class="sm:px-10 px-6 py-6 bg-gray-lightest navbar fixed top-0 left-0 w-full z-50" :class="{ 'hidden-navbar': !showNavbar }">
+  <nav class="sm:px-10 px-6 py-6 navbar fixed top-0 left-0 w-full z-50" :class="[showNavbar ? '' : 'hidden-navbar', navStart ? 'bg-transparent' : 'bg-gray-lightest']">
     <div class="flex justify-between items-center">
       <a href="#" class="text-black font-md font-bold font-sans"> Evelina Sundin </a>
-      <div class="nav-links">
+      <div class="nav-links" :class="open ? 'open': ''">
         <a href="#about" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> About </a>
         <a href="#experience" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Experience </a>
         <a href="#knowledge" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Knowledge </a>
@@ -26,7 +26,8 @@ export default {
       lastScrollPosition: 0,
       scrollValue: 0,
       offset: 60,
-      open: false
+      open: false,
+      navStart: true
     }
   },
   mounted () {
@@ -46,6 +47,7 @@ export default {
         return
       }
       if (Math.abs(window.pageYOffset - this.lastScrollPosition) < this.offset) {
+        this.navStart = false
         return
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition
@@ -98,8 +100,13 @@ export default {
 .nav-links {
   @apply fixed top-0 p-10 flex flex-col bg-gray-lightest h-screen z-50;
   right: -1000px;
+
   @screen md {
     @apply relative p-0 flex-row h-auto right-0;
+  }
+
+  &.open {
+    right:0;
   }
 }
 

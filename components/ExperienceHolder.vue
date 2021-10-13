@@ -1,14 +1,14 @@
 <template>
-  <section class="bg-gray-lightest py-40" id="experience">
-    <div class="max-w-reg mx-auto">
+  <section class="bg-gray-lightest sm:py-40 py-16" id="experience">
+    <div class="max-w-reg mx-auto px-4">
       <h2 class="text-lg font-serif text-black pb-10"> Experience </h2>
-      <div class="flex">
-        <div class="w-1/2">
+      <div class="md:flex">
+        <div class="md:w-1/2 w-full">
           <h2 class="text-md font-sans font-bold text-black pb-4"> Work </h2>
           <span class="block border-t border-black mb-12 mr-12"> </span>
           <ExperienceItem v-for="job in jobs" :key="job.title" :experience="job" />
         </div>
-        <div class="w-1/2">
+        <div class="md:w-1/2 w-full sm:py-0 py-12">
           <h2 class="text-md font-sans font-bold text-black pb-4"> Education </h2>
           <span class="block border-t border-black mb-12 mr-12"> </span>
           <ExperienceItem v-for="education in educations" :key="education.title" :experience="education" />

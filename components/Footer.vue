@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-gray-lightest" id="contact">
-      <div class="max-w-reg mx-auto flex justify-between pt-48 pb-12 px-2">
+      <div class="max-w-reg px-4 mx-auto flex justify-between pt-48 pb-12">
         <div class="">
            <p class="text-black font-md font-bold font-sans"> Evelina Sundin </p>
             <a href="mailto:evelinasundin@hotmail.se" class="font-sans inline-block opacity-50 text-sm mb-2"> evelinasundin@hotmail.se </a>

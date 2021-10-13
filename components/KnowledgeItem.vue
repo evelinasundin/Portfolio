@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/3">
+  <div class="sm:w-1/3 w-full sm:pt0 pt-12">
     <div class="px-3">
       <span class="border-t border-black block pb-4"> </span>
       <p class="font-sans text-black font-bold mr-2 pb-2"> {{knowledge.title}} </p>

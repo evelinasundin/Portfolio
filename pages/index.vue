@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="bg-gray-lightest">
     <Nav />
     <Hero />
-    </div>
     <About />
     <ExperienceHolder />
     <ProjectsHolder />

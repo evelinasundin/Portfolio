@@ -1,15 +1,15 @@
 <template>
-  <div class="mb-24 rounded-lg sm:flex items-center">
-    <a :href="project.link" class="w-1/2" target="_blank" rel="noopener noreferrer">
+  <div class="mb-24 rounded-lg md:flex items-center">
+    <a :href="project.link" class="md:w-1/2 w-full" target="_blank" rel="noopener noreferrer">
       <img class="shadow-lg rounded-lg" lazyload :src="project.image" />
     </a>
-    <div class="pl-8 p-6 project-text flex flex-col relative w-1/2">
+    <div class="sm:pl-8 sm:p-6 pt-6 project-text flex flex-col relative md:w-1/2">
       <a :href="project.link" target="_blank" rel="noopener noreferrer">
         <h3 class="text-md font-bold text-black font-sans pb-4"> {{project.title}} </h3>
       </a>
       <p class="text-gray-darkest font-sans max-w-3xl pb-6 leading-loose project-html" v-html="project.text"> </p>
       <div>
-        <p v-for="item in project.techniques" :key="item" class="mr-3 text-xs bg-purple-light py-2 px-3 rounded-full font-sans inline-block leading-none text-black">
+        <p v-for="item in project.techniques" :key="item" class="mr-3 mb-2 text-xs bg-purple-light py-2 px-3 rounded-full font-sans inline-block leading-none text-black">
           {{item}}
         </p>
       </div>

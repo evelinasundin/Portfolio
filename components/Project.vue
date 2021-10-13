@@ -1,9 +1,9 @@
 <template>
-  <div class="mb-24 rounded-lg md:flex items-center">
+  <div class="sm:mb-24 mb-16 rounded-lg md:flex items-center">
     <a :href="project.link" class="md:w-1/2 w-full" target="_blank" rel="noopener noreferrer">
       <img class="shadow-lg rounded-lg" lazyload :src="project.image" />
     </a>
-    <div class="sm:pl-8 sm:p-6 pt-6 project-text flex flex-col relative md:w-1/2">
+    <div class="sm:pl-8 sm:p-6 pt-8 project-text flex flex-col relative md:w-1/2">
       <a :href="project.link" target="_blank" rel="noopener noreferrer">
         <h3 class="text-md font-bold text-black font-sans pb-4"> {{project.title}} </h3>
       </a>

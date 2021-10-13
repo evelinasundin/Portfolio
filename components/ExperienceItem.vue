@@ -1,14 +1,14 @@
 <template>
-  <div class="experience-item relative pr-10" :class="experience.course ? 'flex items-center pb-2' : 'mb-12 experience-item-line'">
+  <div class="experience-item relative pr-10" :class="experience.course ? 'sm:flex items-center sm:pb-2 pb-4' : 'mb-12 experience-item-line'">
     <div class="flex items-center" @click="experience.desc ? toggle() : null">
-      <h2 class="text-black font-sans" :class="experience.course ? 'text-base font-medium' : 'text-base font-bold'"> {{experience.title}} </h2>
+      <h2 class="text-black font-sans" :class="experience.course ? 'sm:text-base text-sm font-medium' : 'text-base font-bold'"> {{experience.title}} </h2>
       <svg v-if="experience.desc" class="ml-4 cursor-pointer" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="8.5" cy="8.5" r="8" stroke="black"/>
         <line x1="8.5" y1="5" x2="8.5" y2="12" stroke="black"/>
         <line x1="5" y1="8.5" x2="12" y2="8.5" stroke="black"/>
       </svg>
     </div>
-    <span class="block text-gray-dark font-sans text-sm" :class="experience.course ? 'pl-2' : 'pt-1'">
+    <span class="block text-gray-dark font-sans text-sm" :class="experience.course ? 'sm:pl-2 sm:pt-0 pt-1' : 'pt-1'">
       {{experience.year}}
     </span>
     <div :class="showSection ? 'description toggled' : 'description'">

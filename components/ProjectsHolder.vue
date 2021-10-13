@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-reg px-4 mx-auto sm:pt-40 pb-20 py-0" id="personalprojects">
+  <section class="max-w-reg px-4 mx-auto sm:pt-40 sm:pb-20 pt-16" id="personalprojects">
     <h2 class="text-lg font-serif text-black pb-10"> Personal Projects </h2>
     <Project v-for="project in work" :key="project.id" :project="project" />
   </section>

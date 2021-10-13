@@ -1,6 +1,6 @@
 <template>
- <section class="max-w-reg px-4 sm:flex justify-center items-center mx-auto sm:py-40 py-24" id="about">
-  <div class="sm:w-1/3 w-1/2 mx-auto relative">
+ <section class="max-w-reg px-4 sm:flex justify-center items-center mx-auto sm:py-40 py-16" id="about">
+  <div class="sm:w-1/3 w-1/2 mx-auto relative sm:pb-0 pb-6">
     <img class="w-full sm:p-6" lazyload src="~/assets/images/evelina-vector.png" />
     <svg class="image-vector" viewBox="0 0 308 347" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M206.9 31.2828C164.044 -7.40799 130.983 46.5877 92.7181 2.50958C56.9023 -12.7953 -33.0957 92.5024 14.6586 127.398C45.4783 149.918 2.41383 237.083 31.4949 283.814C58.7393 318.709 111.391 276.161 166.799 325.443C227.921 379.808 292.613 320.239 307 218.309C302.714 177.292 243.051 170.693 233.226 145.151C217.92 105.359 260.47 79.6463 206.9 31.2828Z" stroke="#B4B4E5"/>
@@ -17,9 +17,13 @@
 <style lang="scss" scoped>
 
 .image-vector {
-  @apply absolute m-6;
+  @apply absolute m-0;
   top: -24px;
   left: -16px;
+
+  @screen sm {
+     @apply m-6;
+  }
 }
 
 </style>

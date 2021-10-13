@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-lightest relative">
-    <div class="bg-gray-lightest delay-35 max-w-reg px-4 mx-auto pb-20 py-48">
-      <div class="sm:pb-0 sm:pb-16 sm:py-12">
+    <div class="bg-gray-lightest delay-35 max-w-reg px-4 mx-auto pb-16 py-48">
+      <div class="sm:pb-0 sm:pb-16 sm:py-12 pt-16">
         <h1 class="font-serif animate-text-wrapper text-xl sm:text-2xl md:text-4xl leading-tight text-black max-w-reg head-title relative">
           <span class="animate-text-holder block">
             <span class="animate-text slide-up block">

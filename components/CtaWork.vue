@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-reg px-4 mx-auto pb-40">
+  <div class="max-w-reg px-4 mx-auto sm:pb-40 pb-16">
     <div class="max-w-4xl border-t border-black">
         <h2 class="font-serif sm:text-3xl text-xl pt-6 leading-tight text-black max-w-2xl">
             Do you want to find out more projects that I’ve done?

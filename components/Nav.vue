@@ -9,7 +9,7 @@
         <a href="#personalprojects" class="text-gray-darkest font-semibold font-sans sm:pr-6 pr-3"> Personal Projects </a>
         <a href="#contact" class="text-gray-darkest font-semibold font-sans"> Contact </a>
       </div>
-      <div @click="toggle" class="hamburger md:hidden block w-6 h-3">
+      <div @click="toggle" class="hamburger z-50 md:hidden block w-6 h-3">
         <span class="hamburger-top" :class="open ? 'open': ''"></span>
         <span class="hamburger-bottom" :class="open ? 'open': ''"></span>
       </div>
@@ -80,12 +80,20 @@ export default {
 
 .nav-links {
   a {
+    @apply text-md mb-2;
     transition: opacity .2s ease-in-out;
+
+    @screen sm {
+      @apply text-base mb-0;
+    }
+
     &:hover {
       opacity: 0.5;
     }
   }
 }
+
+
 
 .navbar {
   transform: translate3d(0, 0, 0);
@@ -98,8 +106,9 @@ export default {
 }
 
 .nav-links {
-  @apply fixed top-0 p-10 flex flex-col bg-gray-lightest h-screen z-50;
+  @apply fixed top-0 px-20 py-20 flex flex-col bg-gray-lightest h-screen z-50;
   right: -1000px;
+  transition: all .6s cubic-bezier(.165,.84,.44,1);
 
   @screen md {
     @apply relative p-0 flex-row h-auto right-0;

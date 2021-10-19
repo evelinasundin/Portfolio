@@ -62,7 +62,7 @@ export const WORK =
         'Design thinking', 'User interviews', 'Responsive', 'Prototyping', 'etc'
       ],
       client: 'Personal',
-      image: require("@/assets/images/hsb-tvattstuga.jpg?webp"),
+      image: require("@/assets/images/hsb.jpg?webp"),
     },
     {
       id: 6,

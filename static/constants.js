@@ -56,8 +56,8 @@ export const WORK =
       code: false,
       title: 'HSB Laundry App',
       employer: 'Personal project',
-      link: 'https://www.figma.com/file/fJkWQmaPJRspvr6UZC20ut/HSB-Tvättstuge-app-Hi-fi-Prototype?node-id=259%3A6971',
-      text: '<p>Project that i did at Brobygrafiska. Focus area of the project was to investigate in users needs throught out the project, testing and iterating. Also to maintain the brand guidelines. <br> <span class="font-medium block pt-4"> Find out more about the project: </span> <a href="https://www.figma.com/file/fJkWQmaPJRspvr6UZC20ut/HSB-Tvättstuge-app-Hi-fi-Prototype?node-id=259%3A6971" target="_blank"> Hi-Fi (Figma) </a> - <a href="https://miro.com/app/board/o9J_lMPrknc=/?invite_link_id=35920329344" target="_blank"> Work Progress (Miro) </a><p>',
+      link: 'https://www.figma.com/file/O7hiRTZNILg2QauQsynAnj/HSB-Hi-Fi-Prototype-Final?node-id=259%3A4674',
+      text: '<p>Project that i did at Brobygrafiska. Focus area of the project was to investigate in users needs throught out the project, testing and iterating. Also to maintain the brand guidelines. <br> <span class="font-medium block pt-4"> Find out more about the project: </span> <a href="https://www.figma.com/file/O7hiRTZNILg2QauQsynAnj/HSB-Hi-Fi-Prototype-Final?node-id=259%3A4674" target="_blank"> Hi-Fi (Figma) </a> - <a href="https://miro.com/app/board/o9J_lMPrknc=/?invite_link_id=35920329344" target="_blank"> Work Progress (Miro) </a><p>',
       techniques: [
         'Design thinking', 'User interviews', 'Responsive', 'Prototyping', 'etc'
       ],
